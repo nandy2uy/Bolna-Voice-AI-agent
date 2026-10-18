@@ -4,8 +4,6 @@ A loan pre-check voice agent that follows how the caller actually speaks (Hindi,
 
 Built in 3 days with LiveKit Agents (Python, `livekit-agents` 1.8.x) to learn LiveKit hands-on. The loan logic is a deliberately simple stub; the focus is the voice pipeline and the language handling.
 
-**Demo video:** TODO (link)
-
 ## What it does
 
 1. Greets the caller in short Hinglish, says it's an AI assistant, and asks whether to start (consent).
@@ -128,7 +126,7 @@ What I took from it:
 
 ## My take on Hindi voice AI
 
-TODO (rewrite in my own words): On clear Hinglish, modern STTs already get confusable Hindi numbers right; in my test both did, 7 of 7. The harder problem is that the same amount comes back in four different formats, so an agent shouldn't trust transcript text for numbers. It should turn amounts into integers and read them back from code.
+On clear Hinglish, modern STTs already get confusable Hindi numbers right; in my test both did, 7 of 7. The harder problem is that the same amount comes back in four different formats, so an agent shouldn't trust transcript text for numbers. It should turn amounts into integers and read them back from code.
 
 ## Run it yourself (Windows)
 
