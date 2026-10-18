@@ -1,0 +1,26 @@
+# Secrets: .env.local holds your API keys (the example file is allowed)
+.env
+.env.*
+!.env.example
+
+# Python and tooling
+__pycache__
+.venv
+*.egg-info
+.pytest_cache
+.ruff_cache
+
+# Editors and OS files
+.vscode
+.idea
+.DS_Store
+KMS
+
+# Private notes (not pushed)
+notes/
+
+# Generated results and voice recordings
+latency.csv
+stt_results.csv
+stt_results.md
+clips/*.wav
