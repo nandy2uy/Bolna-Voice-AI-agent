@@ -4,6 +4,8 @@ A loan pre-check voice agent that follows how the caller actually speaks (Hindi,
 
 Built in 3 days with LiveKit Agents (Python, `livekit-agents` 1.8.x) to learn LiveKit hands-on. The loan logic is a deliberately simple stub; the focus is the voice pipeline and the language handling.
 
+Started from LiveKit's [`agent-starter-python`](https://github.com/livekit-examples/agent-starter-python) template.
+
 ## What it does
 
 1. Greets the caller in short Hinglish, says it's an AI assistant, and asks whether to start (consent).
@@ -58,6 +60,7 @@ Everything runs on free tiers (LiveKit Cloud Build plan, Sarvam signup credits).
 | `src/latency.py` | Per-stage latency logging to `latency.csv` |
 | `scripts/stt_compare.py` | Mini STT comparison on recorded clips |
 | `scripts/record_clip.py` | Records test clips from the laptop mic |
+| `tests/` | Unit tests for the plain-Python modules (language policy, numbers, eligibility, read-backs) |
 
 ## Latency
 
@@ -144,3 +147,11 @@ lk agent dev
 ```
 
 Open the Agent Console link it prints and start a session.
+
+## Tests
+
+Unit tests cover the plain-Python modules (language policy, numbers, eligibility, read-backs) and need no API keys:
+
+```powershell
+uv run pytest
+```
