@@ -2,7 +2,7 @@
 
 A loan pre-check voice agent that follows how the caller actually speaks (Hindi, English or Hinglish) without flipping language on every English word, and reads numbers back in the language the caller is using.
 
-Built in 3 days with LiveKit Agents (Python, `livekit-agents` 1.8.x) to learn LiveKit hands-on. The loan logic is a deliberately simple stub; the focus is the voice pipeline and the language handling.
+Built with LiveKit Agents (Python, `livekit-agents` 1.8.x) to learn LiveKit hands-on. The loan logic is a deliberately simple stub; the focus is the voice pipeline and the language handling.
 
 Started from LiveKit's [`agent-starter-python`](https://github.com/livekit-examples/agent-starter-python) template.
 
